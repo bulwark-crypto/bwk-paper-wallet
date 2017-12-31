@@ -49,8 +49,8 @@ function generateOne(index, colorOption, numToGenerate) {
     return
   }
   var version = {
-    private: 0x96,
-    public: 0x35
+    private: 0xd4,
+    public: 0x55
   }
   var bytes = secureRandom.randomBuffer(32)
   var key = new CoinKey(bytes, version)
@@ -132,8 +132,8 @@ function print() {
 
 function decrypt() {
   var version = {
-    private: 0x96,
-    public: 0x35
+    private: 0xd4,
+    public: 0x55
   }
   var password = document.getElementById("decrypt_password").value;
   var encryptedKey = document.getElementById("encrypted").value;
