@@ -33,7 +33,7 @@ npm start
 
 ```bash
 npm install -g electron-packager
-electron-packager ./ nav-paper --icon=build/icon.icns
+electron-packager ./ bwk-paper --icon=build/icon.icns
 ```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.

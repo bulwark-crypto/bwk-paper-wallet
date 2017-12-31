@@ -1,10 +1,10 @@
 {
-  "name": "NavCoinPaperWallet",
+  "name": "BWKPaperWallet",
   "version": "1.0.1",
-  "description": "A paper wallet generator with BIP38 password encryption for Nav Coin.",
+  "description": "A paper wallet generator with BIP38 password encryption for Bulwark Cryptocurrency.",
   "main": "main.js",
   "build": {
-    "appId": "org.navcoin.paper",
+    "appId": "org.bulwark.paper",
     "mac": {
       "category": "finance",
     }
@@ -14,10 +14,10 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder"
   },
-  "repository": "https://github.com/navcoindev/paper-wallet",
+  "repository": "https://github.com/heartofgold42/paper-wallet",
   "keywords": [
-    "Nav Coin",
-    "NAV",
+    "BWK Coin",
+    "Bulwark",
     "Paper Wallet",
     "Cryptocurrency",
     "Bitcoin"
