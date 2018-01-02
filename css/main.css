@@ -26,6 +26,8 @@ html, body {
 }
 
 .pubkey-string {
+    color: black;
+    font-weight: bold;
   position: absolute;
   top: 43px;
   left: 26px;
@@ -35,8 +37,10 @@ html, body {
 }
 
 .pubkey-string-invert {
+        color: black;
+    font-weight: bold;
   position: absolute;
-  bottom: 43px;
+  bottom: 46px;
   left: 26px;
   width: 280px;
   text-align: center;
@@ -56,8 +60,10 @@ html, body {
 }
 
 .privkey-string {
+        color: black;
+    font-weight: bold;
   position: absolute;
-  top: 60px;
+  top: 62px;
   right: 18px;
   width: 441px;
   text-align: center;
@@ -65,8 +71,10 @@ html, body {
 }
 
 .privkey-string-invert {
+        color: black;
+    font-weight: bold;
   position: absolute;
-  bottom: 60px;
+  bottom: 62px;
   right: 18px;
   width: 441px;
   text-align: center;
