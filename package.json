@@ -6,7 +6,7 @@
   "build": {
     "appId": "org.bulwark.paper",
     "mac": {
-      "category": "finance",
+      "category": "finance"
     }
   },
   "scripts": {
