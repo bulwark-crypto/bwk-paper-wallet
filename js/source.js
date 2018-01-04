@@ -99,10 +99,10 @@ function generateOne(index, colorOption, numToGenerate) {
 
   if(colorOption === 'BLACK_WHITE') {
     document.getElementById('paper-wallet-' + index).style.color = '#000'
-    document.getElementById('paper-background-' + index).setAttribute('src', 'images/paper-wallet-bw.png')
+    document.getElementById('paper-background-' + index).setAttribute('src', 'images/paper-wallet-bw.svg')
   } else {
     document.getElementById('paper-wallet-' + index).style.color = '#FFF'
-    document.getElementById('paper-background-' + index).setAttribute('src', 'images/paper-wallet-color.png')
+    document.getElementById('paper-background-' + index).setAttribute('src', 'images/paper-wallet-color.svg')
   }
   document.getElementById("overlay").style.display = 'none';
 }
