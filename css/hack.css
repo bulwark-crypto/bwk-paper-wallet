@@ -33,7 +33,7 @@
     transition-timing-function: linear;
     transition-delay: initial;
     transition-property: all;
-    font-family: ralewaymedium, Helvetica, Arial, sans-serif;
+    font-family: "Amiko";
     color: rgb(255, 255, 255);
 }
 .ut-btn.round {
@@ -93,6 +93,7 @@ p .ut-btn {
     background-color: rgb(21, 21, 21);
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+      font-family: "Amiko";
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -133,6 +134,7 @@ a:focus {
     outline-width: 0px;
 }
 * {
+      font-family: "Amiko";
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -182,6 +184,7 @@ a {
     margin-bottom: 0px;
 }
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+      font-family: "Amiko";
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -217,6 +220,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 * {
+      font-family: "Amiko";
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -235,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
 }
 h2 {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 .page-title, .parallax-title, .section-title {
