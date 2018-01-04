@@ -1,8 +1,8 @@
-
-#button
-.ut-btn, .ut-btn:hover {
+#button .ut-btn,
+.ut-btn:hover {
     color: rgb(255, 255, 255);
 }
+
 .ut-btn {
     cursor: pointer;
     display: inline-block;
@@ -36,20 +36,27 @@
     font-family: "Amiko";
     color: rgb(255, 255, 255);
 }
+
 .ut-btn.round {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-.ut-brands, .ut-btn, .ut-vertical {
+
+.ut-brands,
+.ut-btn,
+.ut-vertical {
     text-align: center;
 }
-.cta-btn a, .ut-btn {
+
+.cta-btn a,
+.ut-btn {
     text-decoration-line: none;
     text-decoration-style: initial;
     text-decoration-color: initial;
 }
+
 .ut-btn.medium {
     font-size: 13px;
     height: 44px;
@@ -59,15 +66,18 @@
     padding-bottom: 0px;
     padding-left: 20px;
 }
+
 .ut-btn:hover {
     color: rgb(255, 255, 255);
 }
+
 p .ut-btn {
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
 }
+
 .ut-btn.blue {
     background-image: initial;
     background-position-x: initial;
@@ -80,6 +90,7 @@ p .ut-btn {
     background-clip: initial;
     background-color: rgb(52, 152, 219);
 }
+
 .ut-btn.blue:hover {
     background-image: initial;
     background-position-x: initial;
@@ -92,8 +103,65 @@ p .ut-btn {
     background-clip: initial;
     background-color: rgb(21, 21, 21);
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-      font-family: "Amiko";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    font-family: "Amiko";
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -128,13 +196,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding-left: 0px;
     vertical-align: baseline;
 }
+
 a:focus {
     outline-color: initial;
     outline-style: initial;
     outline-width: 0px;
 }
+
 * {
-      font-family: "Amiko";
+    font-family: "Amiko";
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -145,7 +215,9 @@ a:focus {
     padding-left: 0px;
     -webkit-font-smoothing: antialiased;
 }
-a, .ut-custom-link-module i {
+
+a,
+.ut-custom-link-module i {
     cursor: pointer;
     text-decoration-line: none;
     text-decoration-style: initial;
@@ -158,33 +230,91 @@ a, .ut-custom-link-module i {
     transition-property: color;
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
 a:hover {
     color: rgb(21, 21, 21);
     cursor: pointer;
 }
+
 .light a:hover {
     color: rgb(255, 255, 255);
 }
+
 .light#contact-section a:hover {
     color: rgb(255, 255, 255);
 }
+
 a {
     color: rgb(52, 143, 247);
 }
 
-#logo
-.logo img {
+#logo .logo img {
     max-height: 30px;
     vertical-align: middle;
 }
 
-#header
-
-.wpb_wrapper .section-title {
+#header .wpb_wrapper .section-title {
     margin-bottom: 0px;
 }
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-      font-family: "Amiko";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    font-family: "Amiko";
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -219,8 +349,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding-left: 0px;
     vertical-align: baseline;
 }
+
 * {
-      font-family: "Amiko";
+    font-family: "Amiko";
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -231,30 +362,47 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding-left: 0px;
     -webkit-font-smoothing: antialiased;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: rgb(21, 21, 21);
     line-height: 125%;
     font-weight: 400;
     margin-top: 0px;
     word-wrap: break-word;
 }
+
 h2 {
     font-size: 25px;
     margin-bottom: 20px;
 }
-.page-title, .parallax-title, .section-title {
+
+.page-title,
+.parallax-title,
+.section-title {
     font-size: 30px;
     margin-bottom: 20px;
     position: relative;
 }
-h2, .ut-quote-post-block {
+
+h2,
+.ut-quote-post-block {
     font-family: Amiko;
     font-style: normal;
 }
+
 #rewards .section-title {
     font-family: Amiko;
 }
+
 #ut_header_5a4d9c293abc3 h2 {
     font-size: 30px;
     letter-spacing: 1px;
+}
+.inner-right {
+        padding: 50px;
 }
