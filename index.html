@@ -6,30 +6,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hack.css">
     <link rel="stylesheet" href="css/print.css" media="print">
     <script src="js/scripts.js"></script>
-    </script>
   </head>
   <body>
     <div id="generate-tab">
       <div class="header">
-        <img class="logo" src="images/logo-extended.png" />
-        <h1>Bulwark Paper Wallet Generator</h1>
-        <span class="navigate">
-          <a class="btn btn-small" id="decrypt-tab-btn">Decrypt</a>
-          <a class="btn btn-small active">Generate</a>
-        </span>
+        <img class="logo" data-altlogo="images/bulwark_mixedbadge-2black.png" src="images/bulwark_mixedbadge-2black.png" alt="Bulwark"/>
+         <h2>Paper Wallet Generator</h2>
       </div>
 
       <div class="info">
         <div class="inner">
-          <div class="layout-left">
-            <div class="inner-left">
-                <img src="images/info.png" />
-            </div>
-          </div>
-          <div class="layout-right">
-            <div class="inner-right">
+          <div class="layout-center">
               <h2>What you need to know</h2>
               <p>
                 None of the generated keys are ever broadcast over the internet.
@@ -38,9 +28,17 @@
               <p>
                 For the extra paranoid; you can run the generator and print the wallets using a secure offline environment and correctly wipe the environment and printer memory after use.
               </p>
-              <a href="http://www.bulwark-crypto.com/downloads/#paper-wallet" target="e" class="btn">Download the Generator</a>
 
-            </div>
+              <p>
+                <a href="http://www.bulwark-crypto.com/downloads/#paper-wallet" target="e" class="ut-btn blue medium round">Download the Generator</a>
+              </p>
+              <br>
+              <p>
+                <a class="ut-btn blue medium round" id="decrypt-tab-btn">Decrypt</a>
+
+                <a class="ut-btn blue medium round active">Generate</a>
+              </p>
+
           </div>
         </div>
       </div>
@@ -60,9 +58,9 @@
           <option value="BLACK_WHITE">Black & White</option>
         </select>
         <input class="form-input" id="password" placeholder="BIP38 Password (Optional)" maxlength="32" />
-        <button id="generate" class="btn btn-small">Generate Wallets</button>
-        <button id="print" class="btn btn-small">Print</button>
-        <button id="reset" class="btn  btn-small btn-red">Reset</button>
+        <button id="generate" class="ut-btn blue medium round">Generate Wallets</button>
+        <button id="print" class="ut-btn blue medium round">Print</button>
+        <button id="reset" class="ut-btn blue medium round">Reset</button>
       </div>
 
       <div class="container">
@@ -86,7 +84,7 @@
                 <tr class="pt-password" id="pt-password-0"><td class="row-key">BIP38 Password</td><td id="password-0"></td></tr>
               </table>
             </div>
-            <button class="btn btn-small" id="decrypt-tab-0" style="margin-top: 10px;">Test Encryption</a>
+            <button class="btn btn-small" id="decrypt-tab-0" style="margin-top: 10px;">Test Encryption</button>
         </div>
         <div id="wallet-1" class="wallet-container">
             <h3 class="paper-title" id="paper-title-1">Paper Wallet 2</h3>
@@ -108,7 +106,7 @@
                 <tr class="pt-password" id="pt-password-1"><td class="row-key">BIP38 Password</td><td id="password-1"></td></tr>
               </table>
             </div>
-            <button class="btn btn-small" id="decrypt-tab-1" style="margin-top: 10px;">Test Encryption</a>
+            <button class="btn btn-small" id="decrypt-tab-1" style="margin-top: 10px;">Test Encryption</button>
         </div>
         <div id="wallet-2" class="wallet-container">
             <h3 class="paper-title" id="paper-title-2">Paper Wallet 3</h3>
@@ -130,7 +128,7 @@
                 <tr class="pt-password" id="pt-password-2"><td class="row-key">BIP38 Password</td><td id="password-2"></td></tr>
               </table>
             </div>
-            <button class="btn btn-small" id="decrypt-tab-2" style="margin-top: 10px;">Test Encryption</a>
+            <button class="btn btn-small" id="decrypt-tab-2" style="margin-top: 10px;">Test Encryption</button>
         </div>
         <div id="wallet-3" class="wallet-container">
             <h3 class="paper-title" id="paper-title-3">Paper Wallet 4</h3>
@@ -152,7 +150,7 @@
                 <tr class="pt-password" id="pt-password-3"><td class="row-key">BIP38 Password</td><td id="password-3"></td></tr>
               </table>
             </div>
-            <button class="btn btn-small" id="decrypt-tab-3" style="margin-top: 10px;">Test Encryption</a>
+            <button class="btn btn-small" id="decrypt-tab-3" style="margin-top: 10px;">Test Encryption</button>
         </div>
       </div>
 
@@ -165,12 +163,8 @@
   </div>
   <div id="decrypt-tab">
     <div class="header">
-      <img class="logo" src="images/logo-extended.png" />
-      <h1>Bulwark Paper Wallet Generator</h1>
-      <span class="navigate">
-        <a class="btn btn-small active">Decrypt</a>
-        <a class="btn btn-small" id="generate-tab-btn">Generate</a>
-      </span>
+      <img class="logo" data-altlogo="images/bulwark_mixedbadge-2black.png" src="images/bulwark_mixedbadge-2black.png" alt="Bulwark"/>
+      <h2>Paper Wallet Generator</h2>
     </div>
 
     <div class="info">

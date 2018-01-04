@@ -1,8 +1,9 @@
 html, body {
-  font-family: "Roboto",sans-serif;
-  background-color: #FFF;
+  font-family: "Amiko";
+  background-color: #FFFFFF;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 .container, .header, .form, .footer {
@@ -11,6 +12,14 @@ html, body {
   background-color: #FFF;
   position: relative;
   z-index: 100;
+}
+
+.header {
+  text-align: right;
+}
+
+.form {
+  padding: 15px 15px;
 }
 
 .paper-wallet {
@@ -98,7 +107,7 @@ html, body {
   font-size: 10px;
 }
 
-.header h1 {
+.header h2 {
   line-height: 50px;
   display: inline-block;
   margin: 20px 0 20px 20px;
@@ -171,6 +180,7 @@ html, body {
 
 .info h2 {
   margin-top: 0;
+  color: #FFFFFF;
 }
 
 .info:after {
@@ -178,24 +188,12 @@ html, body {
   display: table;
   clear: both;
 }
-.layout-left {
-  width: 33%;
-  height: 100%;
-  float: left;
-}
 
-.inner-left {
-  padding: 66px 0;
-}
-
-.layout-right {
-  width: 66%;
-  float: left;
-}
-
-.inner-right {
-  padding: 40px 20px;
+.layout-center {
+  width: 60%;
+  padding: 25px 20%;
   line-height: 1.8;
+  float: none;
 }
 
 #print, #reset {
@@ -356,3 +354,4 @@ td {
 #decrypt-tab-0, #decrypt-tab-1, #decrypt-tab-2, #decrypt-tab-3 {
   display: none;
 }
+
