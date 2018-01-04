@@ -41,6 +41,7 @@ body {
 }
 
 .pubkey-string {
+    font-family: "Amiko";
     color: black;
     font-weight: bold;
     position: absolute;
@@ -52,6 +53,7 @@ body {
 }
 
 .pubkey-string-invert {
+    font-family: "Amiko";
     color: black;
     font-weight: bold;
     position: absolute;
@@ -75,6 +77,7 @@ body {
 }
 
 .privkey-string {
+    font-family: "Amiko";
     color: black;
     font-weight: bold;
     position: absolute;
@@ -86,6 +89,7 @@ body {
 }
 
 .privkey-string-invert {
+    font-family: "Amiko";
     color: black;
     font-weight: bold;
     position: absolute;
@@ -233,7 +237,7 @@ body {
 }
 
 .form-input {
-    width: 40%;
+    width: 30%;
     display: inline-flex;
     height: 20px;
     padding: 6px 12px;
@@ -265,6 +269,7 @@ body {
 }
 
 .pt-output {
+    font-family: "Amiko";
     background-color: #EEE;
     padding: 10px;
     border-radius: 5px;
@@ -290,6 +295,7 @@ td {
 }
 
 .wallet-container {
+    font-family: "Amiko";
     border-bottom: 1px dashed #CCC;
     display: none;
     padding-bottom: 20px;
@@ -323,13 +329,13 @@ td {
     margin: auto;
     z-index: 1001;
     width: 400px;
-    height: 100px;
-    border: 1px solid #00468c;
+    height: 150px;
+    border: 1px solid #3F70B5;
     border-radius: 5px;
     overflow: hidden;
     display: inline-block;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-    background-color: #7d5ab5;
+    background-color: #3F70B5;
 }
 
 #loader img {
@@ -346,10 +352,11 @@ td {
 }
 
 #overlay-sub {
+    font-family: "Amiko";
     color: #FFF;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .navigate .btn {
@@ -378,15 +385,19 @@ p {
     font-family: "Amiko"!important;
 }
 
-.forminner {
-    padding-bottom: 60px;
-}
-
-
-
-
-
+.forminner {}
 
 #generate {
     width: 20%;
+}
+
+.forminputs {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+#overlay-text {
+    font-family: "Amiko";
+    font-style: bold;
+    padding-bottom: 10px;
 }

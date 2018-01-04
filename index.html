@@ -40,18 +40,6 @@
         </div>
 
         <div class="form">
-            <div class="forminner">
-                <p>You can generate up to 4 which will fit onto 1 piece of portrait A4 paper.</p>
-                <br>
-                <p>Encrypting the private keys with a BIP38 password is recommended, but optional.</p>
-                <br>
-                <p>Encrypting can take some time to complete, so please be patient.</p>
-                <br>
-                <p>The password you set will be used for all generated wallets.</p>
-                <br>
-                <p>This password can not be recovered, so do not lose it! It is recommended that you test decrypting the private key before sending coins to it to check nothing went wrong during encrytion.</p>
-
-            </div>
             <div class="forminputs">
 
                 <select id="number-option" class="form-control">
@@ -70,6 +58,19 @@
                 <button id="generate" class="ut-btn blue medium round">Generate Wallets</button>
                 <button id="print" class="ut-btn blue medium round">Print</button>
                 <button id="reset" class="ut-btn blue medium round">Reset</button>
+            </div>
+
+            <div class="forminner">
+                <p>You can generate up to 4 which will fit onto 1 piece of portrait A4 paper.</p>
+                <br>
+                <p>Encrypting the private keys with a BIP38 password is recommended, but optional.</p>
+                <br>
+                <p>Encrypting can take some time to complete, so please be patient.</p>
+                <br>
+                <p>The password you set will be used for all generated wallets.</p>
+                <br>
+                <p>This password can not be recovered, so do not lose it! It is recommended that you test decrypting the private key before sending coins to it to check nothing went wrong during encrytion.</p>
+
             </div>
         </div>
 
@@ -214,7 +215,7 @@
 
         <div class="footer">
             <div class="container">
-                <p>Brought to you by the <a href="http://www.bulwarkcrypto.com" target="e">Bulwark</a> team</p>
+                <p>Brought to you by the <a href="https://bulwarkcrypto.com/" target="e">Bulwark</a> team</p>
                 <p class="terms">By using this software you agree that Bulwark is not responsible for any loss or damages caused by using this sofware and that you use it at your own risk.</p>
             </div>
         </div>
@@ -245,10 +246,13 @@
 
         <div class="form">
             <p>Please enter your BIP38 password and the encrypted key to decrypt.</p>
-            <input class="form-input" id="decrypt_password" placeholder="BIP38 Password" maxlength="32" />
-            <input class="form-input" id="encrypted" placeholder="Encrypted Key" />
-            <button id="decrypt" class="btn btn-small">Decrypt</button>
-            <button id="reset_decrypt" class="btn  btn-small btn-red">Reset</button>
+
+            <div class="forminputs">
+                <input class="form-input" id="decrypt_password" placeholder="BIP38 Password" maxlength="32" />
+                <input class="form-input" id="encrypted" placeholder="Encrypted Key" />
+                <button id="decrypt" class="btn btn-small">Decrypt</button>
+                <button id="reset_decrypt" class="btn  btn-small btn-red">Reset</button>
+            </div>
         </div>
 
         <div class="container">
@@ -278,15 +282,17 @@
 
         <div class="footer">
             <div class="container">
-                <p>brought to you by the <a href="http://www.bulwarkcrypto.com" target="e">Bulwark</a> team</p>
+                <p>brought to you by the <a href="http://www.bulwarkcrypto.com" target="">Bulwark</a> team</p>
                 <p class="terms">By using this software you agree that Bulwark is not responsible for any loss or damages caused by using this sofware and that you use it at your own risk.</p>
             </div>
         </div>
     </div>
     <div id="overlay">
         <div id="loader">
+
             <h3 id="overlay-text">Decrypting Keys ...</h3>
             <p id="overlay-sub">Please be patient, this can take a while.</p>
+
         </div>
     </div>
 </body>
