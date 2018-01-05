@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Amiko');
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    50% {
+        background: #fff;
+    }
+}
+
 html,
 body {
     font-family: "Amiko";
@@ -60,7 +75,7 @@ body {
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255,1);
     padding: 0.8em 1em;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     cursor: pointer;
     text-align: center;
@@ -75,7 +90,7 @@ body {
     font-weight: bold;
     border: 1px solid #3178E2;
     padding: 0.8em 1em;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 24px;
     cursor: pointer;
     text-align: center;
@@ -271,4 +286,53 @@ body {
 
 .input-large {
     width: 550px !important;
+}
+
+.loading {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 0.25rem solid rgba(255, 255, 255, 0.2);
+    border-top-color: #fff;
+    animation: spin 1s infinite linear;
+}
+
+.loading--double {
+    border-style: double;
+    border-width: 0.5rem;
+}
+
+#overlay-text {
+    font-family: "Amiko";
+}
+
+.loadercontent {
+    font-family: "Amiko";
+}
+
+#decrypt-tab-btn:hover {
+    background: #fff;
+    color: #000
+}
+
+#genny {
+    padding-bottom: 0px!important;
+}
+
+.btn-print:hover {
+    background: #3178E2;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-alternate:hover {
+    background-color: #fff;
+    color: #000;
+}
+#generate-tab-btn:hover {
+    background-color: #fff;
+    color: #000
 }
