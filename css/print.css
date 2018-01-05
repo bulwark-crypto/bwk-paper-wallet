@@ -3,6 +3,7 @@
 .footer,
 .info,
 .paper-title,
+#generate-tab,
 .pt-output {
     display: none!important;
 }
