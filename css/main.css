@@ -1,37 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Amiko');
+
 html,
 body {
     font-family: "Amiko";
     background-color: #FFFFFF;
     margin: 0;
-    padding: 0;
     -webkit-font-smoothing: antialiased;
-}
-
-.container,
-.header,
-.form,
-.footer {
-    color: #333;
-    width: 1024px;
-    margin: 0 auto;
-    background-color: #FFF;
     z-index: 100;
-
 }
 
-input,
-button,
-submit {
-    border: none;
+.container-fluid {
+    padding: 0;
 }
 
-.header {
-    text-align: right;
+.header-title {
+    font-weight: bold;
+    line-height: 50px;
+    display: inline-block;
+    margin: 20px 0 20px 20px;
+    font-size: 25px;
+    padding-right: 45px;
 }
 
-.form {
-    padding: 60px 15px;
+.header-logo {
+    height: 50px;
+    margin: 20px 0;
+    display: inline-block;
+    padding-left: 45px;
 }
+
+.info {
+    background-color: #3F70B5;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+    z-index: 100;
+}
+
+.info h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.info .inner {
+    width: 60%;
+    padding: 20px;
+    line-height: 1.6;
+    float: none;
+    margin: 0 auto;
+}
+
+.btn-main {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255,1);
+    padding: 0.8em 1em;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none !important;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.btn-alternate {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: 1px solid #3178E2;
+    padding: 0.8em 1em;
+    font-size: 12px;
+    line-height: 24px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none !important;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+}
+
+.btn-print {
+    color: #3F70B5;
+    border: 1px solid #3178E2;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
+.normal-height {
+    line-height: 0;
+}
+
+.terms {
+    font-size: 10px;
+}
+
+#print,
+#reset {
+    display: none;
+}
+
+/* ported from old main.css */
+
+#loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1001;
+    width: 400px;
+    height: 150px;
+    border: 1px solid #3F70B5;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+    background-color: #3F70B5;
+}
+
+#loader img {
+    vertical-align: bottom;
+    position: relative;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+#loader h3 {
+    margin-top: 20px;
+    text-align: center;
+    color: #FFF;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+    z-index: 1000;
+    display: none;
+}
+
+#overlay-sub {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.wallet-container {
+    border-bottom: 1px dashed #CCC;
+    display: none;
+    padding-bottom: 20px;
+}
+
+/* random terrible css */
 
 .paper-wallet {
     width: 1024px;
@@ -122,90 +252,6 @@ submit {
     font-size: 10px;
 }
 
-.header h2 {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 50px;
-    display: inline-block;
-    margin: 20px 0 20px 20px;
-    padding: 0;
-    top: 0;
-}
-
-.logo {
-    height: 50px;
-    margin: 20px 0;
-    display: inline-block;
-    float: left;
-}
-
-
-.btn {
-    border-color: #3F70B5;
-    background-color: #00468c;
-    text-shadow: 0 0.075em 0.075em rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    padding: 0.563em 1.125em 0.813em;
-    font-size: 16px;
-    font-weight: inherit;
-    line-height: 1.3;
-    text-align: center;
-    vertical-align: middle;
-    color: #fff;
-    -webkit-transition: all 0.15s linear;
-    transition: all 0.15s linear;
-    border-radius: 0.225em;
-    text-decoration: none;
-}
-
-.btn-small {
-    height: 34px;
-    font-size: 16px;
-    padding: 3px 1.125em;
-}
-
-.btn-red {
-    color: #fff;
-    background-color: #d9534f;
-    border-color: #d43f3a;
-}
-
-.btn-green {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-}
-
-.info {
-    text-align: center;
-    background-color: #3F70B5;
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 300;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 100;
-}
-
-.info .inner {
-    width: 60%;
-    padding: 20px;
-    line-height: 1.6;
-    float: none;
-    margin: 0 auto;
-    width: 1100px;
-}
-
-.info h2 {
-    font-weight: bold;
-    margin-top: 0;
-    color: #FFFFFF;
-
-}
-
 .info:after {
     content: "";
     display: table;
@@ -219,200 +265,10 @@ submit {
     float: none;
 }
 
-#print,
-#reset {
-    display: none;
-}
-
-.form-control {
-    display: inline-flex;
-    width: 15%;
-    height: 43px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-
-.form-input {
-    width: 30%;
-    display: inline-flex;
-    height: 29px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-
-#encrypted {
-    width: 590px;
-}
-
 #status {
     display: none;
 }
 
-.pt-password,
-.pt-encrypted {
-    display: none;
-}
-
-.pt-output {
-    font-family: "Amiko";
-    background-color: #EEE;
-    padding: 10px;
-    border-radius: 5px;
-    line-height: 1.8;
-}
-
-.pt-output h4 {
-    margin: 0 0 8px 0;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td {
-    padding: 0 10px;
-    border: 1px solid #CCC;
-}
-
-.row-key {
-    font-weight: bold;
-}
-
-.wallet-container {
-    font-family: "Amiko";
-    border-bottom: 1px dashed #CCC;
-    display: none;
-    padding-bottom: 20px;
-}
-
-#plain-text-d {
-    display: none;
-}
-
-#reset_decrypt {
-    display: none;
-}
-
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.65);
-    z-index: 1000;
-    display: none;
-}
-
-#loader {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 1001;
-    width: 400px;
-    height: 150px;
-    border: 1px solid #3F70B5;
-    border-radius: 5px;
-    overflow: hidden;
-    display: inline-block;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
-    background-color: #3F70B5;
-}
-
-#loader img {
-    vertical-align: bottom;
-    position: relative;
-    z-index: -1;
-    border-radius: 5px;
-}
-
-#loader h3 {
-    margin-top: 20px;
-    text-align: center;
-    color: #FFF;
-}
-
-#overlay-sub {
-    font-family: "Amiko";
-    color: #FFF;
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.navigate .btn {
-    float: right;
-    line-height: 34px;
-    margin: 25px 0 25px 10px;
-}
-
-.btn.active {
-    background-color: #3F70B5;
-}
-
-#decrypt-tab {
-    display: none;
-}
-
-#decrypt-tab-0,
-#decrypt-tab-1,
-#decrypt-tab-2,
-#decrypt-tab-3 {
-    display: none;
-}
-
-
-p {
-    font-family: "Amiko"!important;
-}
-
-.forminner {
-    color: #333333;
-}
-
-#generate {
-    width: 34%;
-}
-
-.forminputs {
-    text-align: center;
-    padding-bottom: 60px;
-}
-
-#overlay-text {
-    font-family: "Amiko";
-    font-style: bold;
-    padding-bottom: 10px;
-}
-
-.loadercontent {
-    text-align: center!important;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%
+.input-large {
+    width: 550px !important;
 }
