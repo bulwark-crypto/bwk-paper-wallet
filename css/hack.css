@@ -1,3 +1,18 @@
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    50% {
+        background: #fff;
+    }
+}
+
 #button .ut-btn,
 .ut-btn:hover {
     color: rgb(255, 255, 255);
@@ -369,9 +384,9 @@ h3,
 h4,
 h5,
 h6 {
-    color: rgb(21, 21, 21);
+    color: #1b1b1b;
     line-height: 125%;
-    font-weight: 400;
+    font-weight: bold;
     margin-top: 0px;
     word-wrap: break-word;
 }
@@ -403,6 +418,24 @@ h2,
     font-size: 30px;
     letter-spacing: 1px;
 }
+
 .inner-right {
-        padding: 50px;
+    padding: 50px;
+}
+
+.loading {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 0.25rem solid rgba(255, 255, 255, 0.2);
+    border-top-color: #fff;
+    animation: spin 1s infinite linear;
+}
+
+.loading--double {
+    border-style: double;
+    border-width: 0.5rem;
 }

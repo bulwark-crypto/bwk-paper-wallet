@@ -17,7 +17,7 @@
     <div id="generate-tab">
         <div class="header">
             <img class="logo" data-altlogo="images/logo.svg" src="images/logo.png" alt="Bulwark" />
-            <h2>Paper Wallet Generator</h2>
+            <h2>PAPER WALLET GENERATOR</h2>
         </div>
 
         <div class="info">
@@ -251,7 +251,7 @@
             <div class="forminputs">
                 <input class="form-input" id="decrypt_password" placeholder="BIP38 Password" maxlength="32" />
                 <input class="form-input" id="encrypted" placeholder="Encrypted Key" />
-                <button id="decrypt" class="btn btn-small">Decrypt</button>
+                <button id="decrypt" class="ut-btn blue medium round active">Decrypt</button>
                 <button id="reset_decrypt" class="btn  btn-small btn-red">Reset</button>
             </div>
         </div>
@@ -290,10 +290,11 @@
     </div>
     <div id="overlay">
         <div id="loader">
-
-            <h3 id="overlay-text">Decrypting Keys ...</h3>
-            <p id="overlay-sub">Please be patient, this can take a while.</p>
-
+            <div class="loadercontent">
+                <div class="loading"></div>
+                <h3 id="overlay-text">Decrypting Keys ...</h3>
+                <p id="overlay-sub">Please be patient, this can take a while.</p>
+            </div>
         </div>
     </div>
 </body>
