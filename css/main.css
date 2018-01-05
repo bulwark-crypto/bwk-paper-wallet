@@ -99,7 +99,8 @@ body {
 }
 
 .btn-print {
-    color: #3F70B5;
+    background: transparent;
+    color: #3178E2;
     border: 1px solid #3178E2;
     padding: .375rem .75rem;
     border-radius: .25rem;
@@ -334,4 +335,14 @@ body {
 #generate-tab-btn:hover {
     background-color: #fff;
     color: #000
+}
+
+#plain-text-0 {
+    padding: 15px;
+    background-color: ghostwhite;
+    border-radius: 5px;
+}
+
+#decrypt-tab-0 {
+    margin-top: 10px
 }
