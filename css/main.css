@@ -186,7 +186,9 @@ body {
     margin: 15px 0;
 }
 
-.paper-background {
+.paper-background,
+.paper-backside
+{
     width: 1024px;
 }
 

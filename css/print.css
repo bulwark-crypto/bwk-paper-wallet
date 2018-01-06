@@ -3,17 +3,17 @@
 .footer,
 .info,
 .paper-title,
-#generate-tab,
+.no-print,
 .pt-output {
     display: none!important;
-}
-
-@[page] {
-    size: landscape
 }
 
 .wallet-container {
     border-bottom: none;
     padding-bottom: 0px;
     display: block;
+}
+
+.page-break {
+    page-break-before: always;
 }

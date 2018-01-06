@@ -29,7 +29,7 @@
         </div>
 
         <div id="generate-tab">
-            <div class="row info">
+            <div class="row info no-print">
                 <div class="col-md-8 offset-2 text-center py-5">
                     <h2>What you need to know</h2>
                     <p>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row py-5">
+            <div class="row py-5 no-print">
                 <div class="col-8 offset-2 text-center">
                     <div class="form-inline">
                         <label class="sr-only" for="number-option">How many wallets do you want to create?</label>
@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row no-print">
                 <div class="col-8 offset-2">
                         <p>You can generate up to 4 which will fit onto 1 piece of portrait A4 paper.</p>
                         <p>Encrypting the private keys with a BIP38 password is recommended, but optional.</p>
@@ -124,7 +124,7 @@
                             </tr>
                         </table>
                     </div>
-                    <button class="btn-print" id="decrypt-tab-0">Test Encryption</button>
+                    <button class="btn-print no-print" id="decrypt-tab-0">Test Encryption</button>
                 </div>
                 <div id="wallet-1" class="wallet-container">
                     <h3 class="paper-title" id="paper-title-1">Paper Wallet 2</h3>
@@ -158,7 +158,7 @@
                             </tr>
                         </table>
                     </div>
-                    <button class="btn-print" id="decrypt-tab-1">Test Encryption</button>
+                    <button class="btn-print no-print" id="decrypt-tab-1">Test Encryption</button>
                 </div>
                 <div id="wallet-2" class="wallet-container">
                     <h3 class="paper-title" id="paper-title-2">Paper Wallet 3</h3>
@@ -192,7 +192,7 @@
                             </tr>
                         </table>
                     </div>
-                    <button class="btn-print" id="decrypt-tab-2" style="margin-top: 10px;">Test Encryption</button>
+                    <button class="btn-print no-print" id="decrypt-tab-2" style="margin-top: 10px;">Test Encryption</button>
                 </div>
                 <div id="wallet-3" class="wallet-container">
                     <h3 class="paper-title" id="paper-title-3">Paper Wallet 4</h3>
@@ -226,7 +226,25 @@
                             </tr>
                         </table>
                     </div>
-                    <button class="btn-print" id="decrypt-tab-3" style="margin-top: 10px;">Test Encryption</button>
+
+                    <button class="btn-print no-print" id="decrypt-tab-3" style="margin-top: 10px;">Test Encryption</button>
+                </div>
+
+                <div class="page-break"></div>
+
+                <div class="wallet-container">
+                    <div class="paper-wallet" id="wallet-backside-0">
+                        <img class="paper-backside" id="paper-backside-0" src="images/paper-wallet-color-back.svg" />
+                    </div>
+                    <div class="paper-wallet" id="wallet-backside-1">
+                        <img class="paper-backside" id="paper-backside-1" src="images/paper-wallet-color-back.svg" />
+                    </div>
+                    <div class="paper-wallet" id="wallet-backside-2">
+                        <img class="paper-backside" id="paper-backside-2" src="images/paper-wallet-color-back.svg" />
+                    </div>
+                    <div class="paper-wallet" id="wallet-backside-3">
+                        <img class="paper-backside" id="paper-backside-3" src="images/paper-wallet-color-back.svg" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -319,6 +337,8 @@
         </div>
     </div>
 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
