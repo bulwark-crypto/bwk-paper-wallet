@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -40,10 +40,6 @@
                         <div class="row py-2">
                             <div class="col">
                                 <a class="btn btn-main float-center" id="decrypt-tab-btn">Decrypt</a>
-                            </div>
-                        </div>
-                        <div class="row px-2">
-                            <div class="col">
                                 <a href="http://www.bulwark-crypto.com/downloads/#paper-wallet" target="#" class="btn btn-alternate float-center">Download the Generator</a>
                             </div>
                         </div>
@@ -83,12 +79,13 @@
             </div>
 
             <div class="row no-print">
-                <div class="col-8 offset-2">
-                        <p>You can generate up to 4 which will fit onto 1 piece of portrait A4 paper.</p>
-                        <p>Encrypting the private keys with a BIP38 password is recommended, but optional.</p>
-                        <p>Encrypting can take some time to complete, so please be patient.</p>
-                        <p>The password you set will be used for all generated wallets.</p>
-                        <p>This password can not be recovered, so do not lose it! It is recommended that you test decrypting the private key before sending coins to it to check nothing went wrong during encrytion.</p>
+                <div class="col-8 offset-2" id="guide">
+                    <p>You can generate up to 4 which will fit onto 1 piece of portrait A4 paper.</p>
+                    <p>Ideally we suggest you print double sided.</p>
+                    <p>Encrypting the private keys with a BIP38 password is recommended, but optional.</p>
+                    <p>Encrypting can take some time to complete, so please be patient.</p>
+                    <p>The password you set will be used for all generated wallets.</p>
+                    <p>This password can not be recovered, so do not lose it! It is recommended that you test decrypting the private key before sending coins to it to check nothing went wrong during encrytion.</p>
                 </div>
             </div>
             <div class="container">
@@ -192,7 +189,7 @@
                             </tr>
                         </table>
                     </div>
-                    <button class="btn-print no-print" id="decrypt-tab-2" style="margin-top: 10px;">Test Encryption</button>
+                    <button class="btn-print no-print" id="decrypt-tab-2">Test Encryption</button>
                 </div>
                 <div id="wallet-3" class="wallet-container">
                     <h3 class="paper-title" id="paper-title-3">Paper Wallet 4</h3>
@@ -227,7 +224,7 @@
                         </table>
                     </div>
 
-                    <button class="btn-print no-print" id="decrypt-tab-3" style="margin-top: 10px;">Test Encryption</button>
+                    <button class="btn-print no-print" id="decrypt-tab-3">Test Encryption</button>
                 </div>
 
                 <div class="page-break"></div>
@@ -254,24 +251,21 @@
                 <div class="col-8 offset-2 text-center py-5">
                     <h2>Decrypt your private key</h2>
                     <p>
-                        If you have encrypted your private key with the BIP38 option, you can reveal the wallet import format private key here.
-                    </p>
-                    <p>
-                        If the encryption worked correctly, the private key here should match the private key displayed on the generator page.
+                        If you have encrypted your private key with the BIP38 option, you can reveal the wallet import format private key here. If the encryption worked correctly, the private key here should match the private key displayed on the generator page.
                     </p>
 
                     <p class="py-1">
-                    <div class="row py-2">
-                        <div class="col">
-                            <button class="btn btn-main float-center" id="generate-tab-btn">Generate</button>
+                        <div class="row py-2">
+                            <div class="col">
+                                <button class="btn btn-main float-center" id="generate-tab-btn">Generate</button>
+                            </div>
                         </div>
-                    </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-6 offset-2 text-center py-5">
-                    <p>Please enter your BIP38 password and the encrypted key to decrypt.</p>
+                <div class="col-5 offset-2 text-center py-4">
+                    Please enter your BIP38 password and the encrypted key to decrypt.
                 </div>
             </div>
 
@@ -282,7 +276,7 @@
                         <input id="decrypt_password" class="form-control mb-2 mr-sm-2" placeholder="BIP38 Password" maxlength="32" />
 
                         <label class="sr-only" for="encrypted">Encrypted Key</label>
-                        <input id="encrypted" class="form-control mb-2 mr-sm-2 input-large" placeholder="Encrypted Key" />
+                        <input id="encrypted" class="form-control mb-2 mr-sm-2" placeholder="Encrypted Key" />
 
                         <label class="sr-only" for="decrypt">Decrypt</label>
                         <button id="decrypt" class="form-control mb-2 mr-sm-2 btn-print">Decrypt</button>
@@ -342,4 +336,5 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

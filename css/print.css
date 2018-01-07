@@ -1,3 +1,8 @@
+@page {
+    size: A4;
+    margin: 0.5cm;
+}
+
 .header,
 .form,
 .footer,
@@ -10,10 +15,10 @@
 
 .wallet-container {
     border-bottom: none;
-    padding-bottom: 0px;
     display: block;
 }
 
 .page-break {
     page-break-before: always;
+    padding-top: 5px;
 }

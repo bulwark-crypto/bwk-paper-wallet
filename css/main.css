@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amiko');
+@import url('fonts.css');
 
 @keyframes spin {
     0% {
@@ -33,7 +33,7 @@ body {
     line-height: 50px;
     display: inline-block;
     margin: 20px 0 20px 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .header-logo {
@@ -171,9 +171,10 @@ body {
 }
 
 .wallet-container {
-    border-bottom: 1px dashed #CCC;
+    margin: 0 auto;
+    width: 1024px;
     display: none;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 /* random terrible css */
@@ -313,6 +314,7 @@ body {
 
 #overlay-text {
     font-family: "Amiko";
+    font-weight: bold;
 }
 
 .loadercontent {
@@ -343,12 +345,76 @@ body {
     color: #000
 }
 
+
+
+#decrypt-tab-0 {
+    margin-top: 20px
+}
+
+#guide {
+    padding-bottom: 20px
+}
+
+
+
 #plain-text-0 {
     padding: 15px;
-    background-color: ghostwhite;
+    background-color: whitesmoke;
     border-radius: 5px;
 }
 
-#decrypt-tab-0 {
-    margin-top: 10px
+#plain-text-1 {
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#plain-text-2 {
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#plain-text-3 {
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+
+
+
+
+#decrypt_password {
+    width: 30%
+}
+
+#encrypted {
+    width: 40%
+}
+
+#decrypt {
+    width: 13%
+}
+
+#reset_decrypt {
+    width: 13%
+}
+
+
+
+#password {
+    width: 35%
+}
+
+#decrypt-tab-1 {
+    margin-top: 20px
+}
+
+#decrypt-tab-2 {
+    margin-top: 20px
+}
+
+#decrypt-tab-3 {
+    margin-top: 20px
 }
