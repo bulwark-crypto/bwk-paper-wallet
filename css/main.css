@@ -186,6 +186,10 @@ body {
     margin: 15px 0;
 }
 
+.paper-wallet img {
+    vertical-align: baseline;
+}
+
 .paper-background,
 .paper-backside
 {
