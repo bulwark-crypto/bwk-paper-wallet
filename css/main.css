@@ -171,6 +171,8 @@ body {
 }
 
 .wallet-container {
+    margin: 0 auto;
+    width: 1024px;
     display: none;
     padding-bottom: 40px;
 }
