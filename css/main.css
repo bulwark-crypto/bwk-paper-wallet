@@ -186,7 +186,13 @@ body {
     margin: 15px 0;
 }
 
-.paper-background {
+.paper-wallet img {
+    vertical-align: baseline;
+}
+
+.paper-background,
+.paper-backside
+{
     width: 1024px;
 }
 
@@ -285,7 +291,7 @@ body {
 }
 
 .input-large {
-    width: 550px !important;
+    width: 520px !important;
 }
 
 .loading {

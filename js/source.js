@@ -74,6 +74,7 @@ function generateOne(index, colorOption, numToGenerate) {
     privateKey = encryptedKey;
   }
 
+  console.log('setting attribute');
   document.getElementById('plain-text-' + index).style.display = 'block'
   document.getElementById('public-key-' + index).innerHTML = key.publicAddress
   document.getElementById('private-key-' + index).innerHTML = key.privateWif
@@ -96,13 +97,16 @@ function generateOne(index, colorOption, numToGenerate) {
   document.getElementById('privkey-qr-' + index).innerHTML = qrPriv.createImgTag(4, 8);
 
   document.getElementById('wallet-' + index).style.display = 'block'
+  document.getElementById('wallet-background-' + index).style.display = 'block'
 
   if(colorOption === 'BLACK_WHITE') {
     document.getElementById('paper-wallet-' + index).style.color = '#000'
     document.getElementById('paper-background-' + index).setAttribute('src', 'images/paper-wallet-bw.svg')
+    document.getElementById('paper-backside-' + index).setAttribute('src', 'images/paper-wallet-bw-back.svg')
   } else {
     document.getElementById('paper-wallet-' + index).style.color = '#FFF'
     document.getElementById('paper-background-' + index).setAttribute('src', 'images/paper-wallet-color.svg')
+    document.getElementById('paper-backside-' + index).setAttribute('src', 'images/paper-wallet-color-back.svg')
   }
   document.getElementById("overlay").style.display = 'none';
 }
@@ -124,6 +128,7 @@ function resetOne(index) {
   document.getElementById('privkey-qr-' + index).innerHTML = ''
   document.getElementById('wallet-' + index).style.display = 'none'
   document.getElementById('decrypt-tab-' + index).style.display = 'none'
+  document.getElementById('wallet-backside-' + index).style.display = 'none'
 }
 
 function print() {
