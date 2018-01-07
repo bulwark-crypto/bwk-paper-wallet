@@ -1,5 +1,5 @@
 @page {
-    size: A4 landscape;
+    size: A4;
     margin: 0.5cm;
 }
 
@@ -20,4 +20,5 @@
 
 .page-break {
     page-break-before: always;
+    padding-top: 5px;
 }
