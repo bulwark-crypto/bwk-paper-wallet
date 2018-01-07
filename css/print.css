@@ -1,3 +1,9 @@
+@page {
+	size: A4 landscape;
+	max-height:100%;
+	max-width:100%
+}
+
 .header,
 .form,
 .footer,
@@ -10,7 +16,6 @@
 
 .wallet-container {
     border-bottom: none;
-    padding-bottom: 0px;
     display: block;
 }
 
