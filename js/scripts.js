@@ -176,7 +176,7 @@
                         console.log('decrypting', Math.round(status.percent), '%');
                     });
 
-                    var decodedDecrypted = wif.encode(150, decryptedKey.privateKey, decryptedKey.compressed);
+                    var decodedDecrypted = wif.encode(212, decryptedKey.privateKey, decryptedKey.compressed);
 
                     var key = CoinKey.fromWif(decodedDecrypted, version);
 
