@@ -214,7 +214,7 @@ body {
     color: black;
     font-weight: bold;
     position: absolute;
-    bottom: 46px;
+    bottom: 48px;
     left: 26px;
     width: 280px;
     text-align: center;
@@ -238,7 +238,7 @@ body {
     color: black;
     font-weight: bold;
     position: absolute;
-    top: 62px;
+    top: 60px;
     right: 18px;
     width: 441px;
     text-align: center;
@@ -250,7 +250,7 @@ body {
     color: black;
     font-weight: bold;
     position: absolute;
-    bottom: 62px;
+    bottom: 64px;
     right: 18px;
     width: 441px;
     text-align: center;
