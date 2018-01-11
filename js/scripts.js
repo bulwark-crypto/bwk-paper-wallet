@@ -58,10 +58,10 @@
                 }
             }
 
-            for (var i = 0; i < 4; i++) resetOne(i);
+            for (var i = 0; i < 3; i++) resetOne(i);
 
             setTimeout(function () {
-                for (var i = 0; i < 4; i++) generateOne(i, colorOption, numToGenerate)
+                for (var i = 0; i < 3; i++) generateOne(i, colorOption, numToGenerate)
                 document.getElementById('print').style.display = 'inline-block';
                 document.getElementById('reset').style.display = 'inline-block';
             }, 100)

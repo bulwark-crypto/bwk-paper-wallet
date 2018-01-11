@@ -54,7 +54,6 @@
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
                         </select>
 
                         <label class="sr-only" for="color-option">What color scheme would you like to use?</label>
@@ -123,6 +122,7 @@
                     </div>
                     <button class="btn-print no-print" id="decrypt-tab-0">Test Encryption</button>
                 </div>
+
                 <div id="wallet-1" class="wallet-container">
                     <h3 class="paper-title" id="paper-title-1">Paper Wallet 2</h3>
                     <div class="paper-wallet" id="paper-wallet-1">
@@ -191,41 +191,6 @@
                     </div>
                     <button class="btn-print no-print" id="decrypt-tab-2">Test Encryption</button>
                 </div>
-                <div id="wallet-3" class="wallet-container">
-                    <h3 class="paper-title" id="paper-title-3">Paper Wallet 4</h3>
-                    <div class="paper-wallet" id="paper-wallet-3">
-                        <img class="paper-background" id="paper-background-3" src="images/paper-wallet-color.svg" />
-                        <div id="pubkey-string-3" class="pubkey-string"></div>
-                        <div id="pubkey-string-3-invert" class="pubkey-string-invert"></div>
-                        <div id="pubkey-qr-3" class="pubkey-qr"></div>
-                        <div id="privkey-string-3" class="privkey-string"></div>
-                        <div id="privkey-string-3-invert" class="privkey-string-invert"></div>
-                        <div id="privkey-qr-3" class="privkey-qr"></div>
-                    </div>
-                    <div class="pt-output" id="plain-text-3">
-                        <h4>Plain Text Address Info</h4>
-                        <table>
-                            <tr>
-                                <td class="row-key">Public Key</td>
-                                <td id="public-key-3"></td>
-                            </tr>
-                            <tr>
-                                <td class="row-key">Private Key</td>
-                                <td id="private-key-3"></td>
-                            </tr>
-                            <tr class="pt-encrypted" id="pt-encrypted-3">
-                                <td class="row-key">Encrypted Key</td>
-                                <td id="encrypted-key-3"></td>
-                            </tr>
-                            <tr class="pt-password" id="pt-password-3">
-                                <td class="row-key">BIP38 Password</td>
-                                <td id="password-3"></td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <button class="btn-print no-print" id="decrypt-tab-3">Test Encryption</button>
-                </div>
 
                 <div class="page-break"></div>
 
@@ -233,16 +198,18 @@
                     <div class="paper-wallet" id="wallet-backside-0">
                         <img class="paper-backside" id="paper-backside-0" src="images/paper-wallet-color-back.svg" />
                     </div>
+                </div>
+                <div class="wallet-container">
                     <div class="paper-wallet" id="wallet-backside-1">
                         <img class="paper-backside" id="paper-backside-1" src="images/paper-wallet-color-back.svg" />
                     </div>
+                </div>
+                <div class="wallet-container">
                     <div class="paper-wallet" id="wallet-backside-2">
                         <img class="paper-backside" id="paper-backside-2" src="images/paper-wallet-color-back.svg" />
                     </div>
-                    <div class="paper-wallet" id="wallet-backside-3">
-                        <img class="paper-backside" id="paper-backside-3" src="images/paper-wallet-color-back.svg" />
-                    </div>
                 </div>
+
             </div>
         </div>
 
