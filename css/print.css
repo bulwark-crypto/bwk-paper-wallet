@@ -16,7 +16,7 @@
 }
 
 .paper-wallet {
-    margin: 0.5cm 0;
+    margin: 0.5mm 0;
 }
 
 .container {
@@ -33,7 +33,12 @@ img {
     max-width: 100% !important;
 }
 
+/* setting page margins to 0 prevents page numbers from overlapping with the wallet image on Firefox */
 @page {
     size: 297mm 210mm;
-    margin: 0.5cm 0.5cm;
+    margin: 0.9cm 0 0 0;
+}
+
+body {
+    margin: 0 0.5cm;
 }

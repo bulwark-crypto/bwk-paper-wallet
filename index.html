@@ -13,7 +13,7 @@
     <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/build/apple-icon-72x72.png">
     <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/build/apple-icon-114x114.png">
     <link rel="icon" type="image/png" href="/build/ms-icon-144x144.png">
-    <title>Bulwark Paper Wallet</title>
+    <title id="page-title">Bulwark Paper Wallet</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -56,6 +56,8 @@
                         <select id="number-option" class="form-control mb-2 mr-sm-2">
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
                         </select>
 
                         <label class="sr-only" for="color-option">What color scheme would you like to use?</label>
@@ -159,43 +161,81 @@
                     </div>
                     <button class="btn-print no-print" id="decrypt-tab-1">Test Encryption</button>
                 </div>
-                <div id="wallet-2" class="wallet-container">
-                    <h3 class="paper-title" id="paper-title-2">Paper Wallet 3</h3>
-                    <div class="paper-wallet" id="paper-wallet-2">
-                        <img class="paper-background" id="paper-background-2" src="images/paper-wallet-color.svg" />
-                        <div id="pubkey-string-2" class="pubkey-string"></div>
-                        <div id="pubkey-string-2-invert" class="pubkey-string-invert"></div>
-                        <div id="pubkey-qr-2" class="pubkey-qr"></div>
-                        <div id="privkey-string-2" class="privkey-string"></div>
-                        <div id="privkey-string-2-invert" class="privkey-string-invert"></div>
-                        <div id="privkey-qr-2" class="privkey-qr"></div>
+
+                <div id="frontsides-container">
+                    <div id="frontsides-container-marker"></div>
+                    <div id="frontsides">
+                        <div id="wallet-2" class="wallet-container">
+                            <h3 class="paper-title" id="paper-title-2">Paper Wallet 3</h3>
+                            <div class="paper-wallet" id="paper-wallet-2">
+                                <img class="paper-background" id="paper-background-2" src="images/paper-wallet-color.svg" />
+                                <div id="pubkey-string-2" class="pubkey-string"></div>
+                                <div id="pubkey-string-2-invert" class="pubkey-string-invert"></div>
+                                <div id="pubkey-qr-2" class="pubkey-qr"></div>
+                                <div id="privkey-string-2" class="privkey-string"></div>
+                                <div id="privkey-string-2-invert" class="privkey-string-invert"></div>
+                                <div id="privkey-qr-2" class="privkey-qr"></div>
+                            </div>
+                            <div class="pt-output" id="plain-text-2">
+                                <h4>Plain Text Address Info</h4>
+                                <table>
+                                    <tr>
+                                        <td class="row-key">Public Key</td>
+                                        <td id="public-key-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row-key">Private Key</td>
+                                        <td id="private-key-2"></td>
+                                    </tr>
+                                    <tr class="pt-encrypted" id="pt-encrypted-2">
+                                        <td class="row-key">Encrypted Key</td>
+                                        <td id="encrypted-key-2"></td>
+                                    </tr>
+                                    <tr class="pt-password" id="pt-password-2">
+                                        <td class="row-key">BIP38 Password</td>
+                                        <td id="password-2"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button class="btn-print no-print" id="decrypt-tab-2">Test Encryption</button>
+                        </div>
+                        <div id="wallet-3" class="wallet-container">
+                            <h3 class="paper-title" id="paper-title-3">Paper Wallet 4</h3>
+                            <div class="paper-wallet" id="paper-wallet-3">
+                                <img class="paper-background" id="paper-background-3" src="images/paper-wallet-color.svg" />
+                                <div id="pubkey-string-3" class="pubkey-string"></div>
+                                <div id="pubkey-string-3-invert" class="pubkey-string-invert"></div>
+                                <div id="pubkey-qr-3" class="pubkey-qr"></div>
+                                <div id="privkey-string-3" class="privkey-string"></div>
+                                <div id="privkey-string-3-invert" class="privkey-string-invert"></div>
+                                <div id="privkey-qr-3" class="privkey-qr"></div>
+                            </div>
+                            <div class="pt-output" id="plain-text-3">
+                                <h4>Plain Text Address Info</h4>
+                                <table>
+                                    <tr>
+                                        <td class="row-key">Public Key</td>
+                                        <td id="public-key-3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="row-key">Private Key</td>
+                                        <td id="private-key-3"></td>
+                                    </tr>
+                                    <tr class="pt-encrypted" id="pt-encrypted-3">
+                                        <td class="row-key">Encrypted Key</td>
+                                        <td id="encrypted-key-3"></td>
+                                    </tr>
+                                    <tr class="pt-password" id="pt-password-3">
+                                        <td class="row-key">BIP38 Password</td>
+                                        <td id="password-3"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button class="btn-print no-print" id="decrypt-tab-3">Test Encryption</button>
+                        </div>
                     </div>
-                    <div class="pt-output" id="plain-text-2">
-                        <h4>Plain Text Address Info</h4>
-                        <table>
-                            <tr>
-                                <td class="row-key">Public Key</td>
-                                <td id="public-key-2"></td>
-                            </tr>
-                            <tr>
-                                <td class="row-key">Private Key</td>
-                                <td id="private-key-2"></td>
-                            </tr>
-                            <tr class="pt-encrypted" id="pt-encrypted-2">
-                                <td class="row-key">Encrypted Key</td>
-                                <td id="encrypted-key-2"></td>
-                            </tr>
-                            <tr class="pt-password" id="pt-password-2">
-                                <td class="row-key">BIP38 Password</td>
-                                <td id="password-2"></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <button class="btn-print no-print" id="decrypt-tab-2">Test Encryption</button>
                 </div>
-
-                <div class="page-break"></div>
-
+            </div>
                 <div class="wallet-container">
                     <div class="paper-wallet" id="wallet-backside-0">
                         <img class="paper-backside" id="paper-backside-0" src="images/paper-wallet-color-back.svg" />
@@ -206,12 +246,21 @@
                         <img class="paper-backside" id="paper-backside-1" src="images/paper-wallet-color-back.svg" />
                     </div>
                 </div>
+
+                <div id="frontsides-placeholder-container">
+                    <div id="frontsides-placeholder"></div>
+                </div>
+
                 <div class="wallet-container">
                     <div class="paper-wallet" id="wallet-backside-2">
                         <img class="paper-backside" id="paper-backside-2" src="images/paper-wallet-color-back.svg" />
                     </div>
                 </div>
-
+                <div class="wallet-container">
+                    <div class="paper-wallet" id="wallet-backside-3">
+                        <img class="paper-backside" id="paper-backside-3" src="images/paper-wallet-color-back.svg" />
+                    </div>
+                </div>
             </div>
         </div>
 

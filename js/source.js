@@ -33,10 +33,10 @@ function generate() {
     }
   }
 
-  for (var i=0; i < 3; i++) resetOne(i);
+  for (var i=0; i < 4; i++) resetOne(i);
 
   setTimeout(function(){
-    for (var i=0; i < 3; i++) generateOne(i, colorOption, numToGenerate)
+    for (var i=0; i < 4; i++) generateOne(i, colorOption, numToGenerate)
     document.getElementById('print').style.display = 'inline-block';
     document.getElementById('reset').style.display = 'inline-block';
   } ,100)
@@ -129,6 +129,56 @@ function resetOne(index) {
   document.getElementById('wallet-' + index).style.display = 'none'
   document.getElementById('decrypt-tab-' + index).style.display = 'none'
   document.getElementById('wallet-backside-' + index).style.display = 'none'
+}
+
+function insertAfter(newNode, referenceNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
+
+function pageBreakAfterId(id) {
+    document.getElementById(id).insertAdjacentHTML('afterend', '<div class="page-break transient"></div>');
+}
+
+function pageBreakBeforeId(id) {
+    document.getElementById(id).insertAdjacentHTML('beforebegin', '<div class="page-break transient"></div>');
+}
+
+window.onbeforeprint = function() {
+    // invisible character to hide the page title Firefox likes to cover the topmost wallet image with
+    document.getElementById('page-title').innerHTML = '&zwnj;';
+    insertAfter(document.getElementById('frontsides'), document.getElementById('frontsides-placeholder'));
+
+    var numberOfWallets = parseInt(document.getElementById('number-option').value)
+
+    switch (numberOfWallets) {
+        case 1:
+            pageBreakAfterId('wallet-0');
+            break;
+        case 2:
+            pageBreakBeforeId('wallet-backside-0');
+            break;
+        case 3:
+            pageBreakAfterId('wallet-3');
+            pageBreakAfterId('wallet-backside-1');
+            break;
+        case 4:
+            pageBreakBeforeId('wallet-backside-0');
+            pageBreakAfterId('wallet-backside-1');
+            pageBreakBeforeId('wallet-backside-2');
+            break;
+    }
+}
+
+window.onafterprint = function() {
+    document.getElementById('page-title').innerHTML = 'Bulwark Paper Wallet';
+
+    insertAfter(document.getElementById('frontsides'), document.getElementById('frontsides-container-marker'));
+
+    var transient = document.getElementsByClassName('transient');
+
+    while(transient[0]) {
+        transient[0].parentNode.removeChild(transient[0]);
+    }
 }
 
 function print() {
