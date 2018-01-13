@@ -182,7 +182,15 @@ window.onafterprint = function() {
 }
 
 function print() {
-  window.print();
+    // workaround for window print events not triggering properly in Electron
+    var userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.indexOf(' electron/') > -1) {
+        window.onbeforeprint();
+        setTimeout(function () { window.print(); }, 500);
+        window.onfocus = function () { setTimeout(function () { window.onafterprint(); }, 500); }
+    } else {
+        window.print();
+    }
 }
 
 function decrypt() {
