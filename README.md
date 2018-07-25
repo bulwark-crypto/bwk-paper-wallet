@@ -1,18 +1,4 @@
-# electron-quick-start
-
-**Clone and run for a quick way to see Electron in action.**
-
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
-
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
+# Bulwark Paper Wallet
 
 ## To Use
 
@@ -32,8 +18,21 @@ npm start
 ## Build
 
 ```bash
-npm install -g electron-packager
-electron-packager ./ bwk-paper --icon=build/icon.icns
+
+npm install
+
+electron-packager . Bulwark-Paper-Wallet --overwrite --platform=darwin --arch=x64 --icon=build/icon.icns --prune=true --out=release-builds
+
+electron-packager . Bulwark-Paper-Wallet --overwrite --asar=true --platform=linux --arch=ia32 --icon=build/android-icon-192x192.png --prune=true --out=release-builds
+
+electron-packager . Bulwark-Paper-Wallet --overwrite --asar=true --platform=linux --arch=x64 --icon=build/android-icon-192x192.png --prune=true --out=release-builds
+
+electron-packager . Bulwark-Paper-Wallet --overwrite --asar=true --platform=linux --arch=arm64 --icon=build/android-icon-192x192.png --prune=true --out=release-builds
+
+electron-packager . Bulwark-Paper-Wallet --overwrite --asar=true --platform=win32 --arch=ia32 --icon=build/icon.ico --prune=true --out=release-builds --version-string.CompanyName=Bulwark-Cryptocurrency --version-string.FileDescription=Bulwark-Paper-Wallet --version-string.ProductName=Bulwark-Paper-Wallet
+
+electron-packager . Bulwark-Paper-Wallet --overwrite --asar=true --platform=win32 --arch=x64 --icon=build/icon.ico --prune=true --out=release-builds --version-string.CompanyName=Bulwark-Cryptocurrency --version-string.FileDescription=Bulwark-Paper-Wallet --version-string.ProductName=Bulwark-Paper-Wallet
+
 ```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
