@@ -1,5 +1,5 @@
 {
-  "name": "Bulwark Paper Wallet",
+  "name": "Bulwark-Paper-Wallet",
   "version": "1.3.1",
   "description": "A paper wallet generator with BIP38 password encryption for Bulwark Cryptocurrency.",
   "main": "main.js",
