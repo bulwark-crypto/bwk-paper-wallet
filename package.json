@@ -22,12 +22,12 @@
   "devDependencies": {
     "aes": "^0.1.0",
     "bip38": "https://github.com/craigmacgregor/bip38/tarball/8e11c7da1d4df8a80b5aa32ed1457e474d911f20",
-    "browserify": "^16.2.2",
+    "browserify": "^16.2.3",
     "coinkey": "^3.0.0",
-    "electron": "^2.0.5",
-    "qrcode-generator": "^1.2.0",
+    "electron": "^3.0.7",
+    "electron-packager": "^12.2.0",
+    "qrcode-generator": "^1.4.1",
     "secure-random": "^1.1.1",
-    "wif": "^2.0.6",
-    "electron-packager": "^12.1.0"
+    "wif": "^2.0.6"
   }
 }
