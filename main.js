@@ -4,8 +4,8 @@ const { Menu, app } = electron;
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 
-BrowserWindow.width = 1150;
-BrowserWindow.height = 750;
+BrowserWindow.width = 1280;
+BrowserWindow.height = 720;
 
 const path = require('path')
 const url = require('url')
